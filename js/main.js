@@ -4,11 +4,12 @@
 // 
 document.addEventListener('DOMContentLoaded', function() {
     const images = ['img/slide1.jpg', 'img/slide2.jpg', 'img/slide3.jpg']; // List of images
-    const contents = [
-      "Where your memories come to life through the art of personalized photo albums. At Albumize, we believe that every moment is worth treasuring, and what better way to cherish your memories than by creating custom photo albums that tell your unique story?",
-      "Whether it's reliving the magic of your wedding day, celebrating family milestones, or capturing the adventure of your travels, Albumize offers you the tools to transform your favorite moments into beautifully crafted keepsakes.",
-      "With our easy-to-use platform, you have the freedom to design your own photo albums, selecting from a range of cover materials, sizes, and layouts to suit your style and preferences. Our commitment to quality ensures that each album is meticulously crafted with the utmost care and attention to detail. Join us on this journey of preserving your memories, one page at a time. Start creating your personalized photo album today and let Albumize help you turn your cherished moments into timeless treasures."
-    ]; // List of corresponding content
+    var contents = [
+      "At Sproprise Services, we are committed to providing top-notch cleaning and facilities management solutions tailored to meet the unique needs of our clients.",
+      "With a focus on safety, quality, and customer satisfaction, we deploy trained and groomed janitors equipped with the latest tools and technologies.",
+      "Our goal is to create clean and inviting spaces that promote productivity and well-being for businesses, organizations, and residential communities alike.",
+      "With years of experience and a dedication to excellence, we strive to be the preferred choice for all your cleaning and maintenance needs."
+    ];
 
     let index = 0; // Initialize index
 
@@ -29,30 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
     changeWelcomeContent();
 
     // Set interval to change content every 2 seconds
-    setInterval(changeWelcomeContent,5000);
+    setInterval(changeWelcomeContent,3000);
   });
-// 
-// preview 
-// 
-
-function previewImage(event) {
-    const reader = new FileReader();
-    reader.onload = function() {
-      const imagePreview = document.getElementById('imagePreview');
-      imagePreview.src = reader.result;
-    };
-    reader.readAsDataURL(event.target.files[0]);
-  }
-
-  function resizeImage() {
-    // Add functionality for resizing image here
-    console.log('Resizing image...');
-  }
-
-  function changeOrientation() {
-    // Add functionality for changing orientation here
-    console.log('Changing orientation...');
-  }
-
-
-
